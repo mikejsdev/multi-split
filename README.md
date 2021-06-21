@@ -6,6 +6,7 @@ Javascript's current String.split() only allows a single string to be specified 
 Multi Split allows you to split a sting on an array of strings. No Regex is required.
 
 # Example
+```javascript
 
 const multiSplit = require('multi-split');
 
@@ -13,12 +14,15 @@ const result = multiSplit("The quick brown fox jumps over the lazy dog", ['quick
 
 console.log(result);
 // [ 'The ', ' brown fox ', ' over the lazy dog' ]
+```
 
 # Example 2
 
+```javascript
 const multiSplit = require('multi-split');
 
 const result = multiSplit("this.is a+string&with(lots$of@seperators", ['+', '.', ' ', '(', '&', '$', '@']);
 
 console.log(result);
 //[ 'this', 'is', 'a', 'string', 'with', 'lots', 'of', 'seperators' ]
+```
